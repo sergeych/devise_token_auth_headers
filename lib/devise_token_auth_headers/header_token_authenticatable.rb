@@ -8,7 +8,7 @@ module Devise
         super or begin
           if !@header_keys
             base = mapping.to.token_authentication_key.to_s
-            @header_keys = [base, "X_#{base.camelize}"].map { |x| "HTTP_#{x.upcase}" }
+            @header_keys = [base, "X_#{base.camelize}", "X_#{base}"].map { |x| "HTTP_#{x.upcase}" }
           end
           self.authentication_hash = {}
           self.authentication_type = :token_auth
