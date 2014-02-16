@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "devise_token_auth_headers"
-  s.version     = "1.0.1"
+  s.version     = "1.0.2"
   s.authors     = ["Sergey Chernov"]
   s.email       = ["real.sergeych@gmail.com"]
   s.homepage    = "https://github.com/sergeych/devise_token_auth_headers"
